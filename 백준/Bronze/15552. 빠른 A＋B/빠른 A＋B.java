@@ -12,11 +12,13 @@ public class Main{
         StringTokenizer tk;
         int ct = Integer.parseInt(br.readLine());
         int sum;
+        StringBuilder output = new StringBuilder();
         for(int i=0; i<ct;i++){
             tk = new StringTokenizer(br.readLine());
             sum = Integer.parseInt(tk.nextToken())+Integer.parseInt(tk.nextToken());
-            bw.write(sum+"\n");
+            output.append(sum).append("\n");
         }
+        bw.write(output.toString());
         bw.close();
     }
 }
