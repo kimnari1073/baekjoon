@@ -1,6 +1,4 @@
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.BufferedReader;
 
 public class Main{
         private static int read() throws IOException{
@@ -11,13 +9,15 @@ public class Main{
         return n;
     }
     public static void main(String[]args) throws IOException{
-        int []arr = new int[read()];
-        for(int i=0;i<arr.length;i++){
+        int n = read();
+        int []arr = new int[n];
+        int count = 0;
+
+        for(int i=0;i<n;i++){
             arr[i] = read();
         }
-        int count = 0;
         int num = read();
-        for(int i=0;i<arr.length;i++){
+        for(int i=0;i<n;i++){
             if(arr[i]==num) count++;
         }
         System.out.println(count);
