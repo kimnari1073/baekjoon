@@ -9,11 +9,10 @@ public class Main{
     public static void main(String[]args)throws Exception{
         int n = read();
         int x = read();
-        int []arr = new int[n];
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<n;i++){
-            arr[i] = read();
-            if(x>arr[i]) sb.append(arr[i]).append(" ");
+            int input=read();
+            if(x>input) sb.append(input).append(" ");
         }
         System.out.print(sb);
     }
