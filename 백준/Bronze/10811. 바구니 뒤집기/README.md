@@ -29,4 +29,6 @@
 ### 출력 
 
  <p>모든 순서를 바꾼 다음에, 가장 왼쪽에 있는 바구니부터 바구니에 적혀있는 순서를 공백으로 구분해 출력한다.</p>
+ <img width="555" alt="image" src="https://user-images.githubusercontent.com/107450730/229266521-fc0e0926-ba04-4fac-9abc-97b9e828492d.png">
+
 
