@@ -1,17 +1,15 @@
-import java.util.Arrays;
 public class Main{
     public static void main(String[]args)throws Exception{
         int index = read();
         double []arr = new double[index];
+        int max = 0;
+        double sum = 0.0;
         for(int i=0;i<index;i++){
             arr[i] = read();
+            if(max < arr[i]) max = (int)arr[i];
+            sum += arr[i];
         }
-        Arrays.sort(arr);
-        double avg =0.0;
-        for(int i=0;i<index;i++){
-            avg += (arr[i]/arr[index-1]*100)/index;
-        }
-        System.out.println(avg);
+        System.out.println(sum/max/index*100);
     }
     private static int read()throws Exception{
         int c,n = System.in.read()&15;
