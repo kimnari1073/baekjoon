@@ -1,14 +1,19 @@
 import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 public class Main{
     public static void main(String[]args)throws IOException{
-        int num;
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String st = br.readLine();
         int []arr = new int[26];
         Arrays.fill(arr,-1);
-        int ct = 0;
-        while((num = System.in.read())!=10){
-            if(arr[num-97]==-1) arr[num-97] = ct;
-            ct++;
+        int ct = st.length();
+        for(int i=0;i<ct;i++){
+            int tem = st.charAt(i)-97;
+            if(arr[tem]==-1){
+                arr[tem] = i;
+            }
         }
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<26;i++){
@@ -16,4 +21,5 @@ public class Main{
         }
         System.out.println(sb);
     }
+
 }
